@@ -1,4 +1,4 @@
-package com.example.foodappnumberlast
+package com.example.restaurantapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ class Splash_Screen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash__screen)
+        setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))

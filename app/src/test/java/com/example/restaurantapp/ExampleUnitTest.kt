@@ -1,4 +1,4 @@
-package com.example.foodappnumberlast
+package com.example.restaurantapp
 
 import org.junit.Test
 
