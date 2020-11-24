@@ -1,9 +1,10 @@
-package com.example.restaurantapp
+package com.example.restaurantapp.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.restaurantapp.R
 
 class Splash_Screen : AppCompatActivity() {
     private val SPLASH_TIME: Long = 3000
