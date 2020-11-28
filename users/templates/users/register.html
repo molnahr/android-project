@@ -1,0 +1,20 @@
+{% extends "my_web/base.html" %}
+{% load crispy_forms_tags %}
+{%block content%}
+
+    <div>
+        <form method = "POST">
+            {% csrf_token %}
+            <fieldset>
+                {{ form|crispy }}
+            </fieldset>
+
+            <div>
+                <button>Sing Up</button>
+            </div>
+        </form>
+        <div>
+            Van mar fiokod? <a class="ml-2" href="{% url  'login' %}">Bejelentkezes</a>
+        </div>
+    </div>
+{%endblock content%}

@@ -1,0 +1,10 @@
+//lertre kell hozni a csatolast az uj app letrehozasanal
+INSTALLED_APPS = [
+    'my_web.apps.MyWebConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
