@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/allamvizsga.iml" filepath="$PROJECT_DIR$/.idea/allamvizsga.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestaurantApp.iml" filepath="$PROJECT_DIR$/.idea/modules/RestaurantApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RestaurantApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RestaurantApp.app.iml" />
     </modules>
   </component>
 </project>
