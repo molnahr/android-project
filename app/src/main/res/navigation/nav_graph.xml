@@ -29,5 +29,14 @@
         android:id="@+id/listOfRestaurantsFragment"
         android:name="fragments.ListOfRestaurantsFragment"
         android:label="Restaurants"
-        tools:layout="@layout/fragment_list_of_restaurants" />
+        tools:layout="@layout/fragment_list_of_restaurants" >
+        <action
+            android:id="@+id/action_listOfRestaurantsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>

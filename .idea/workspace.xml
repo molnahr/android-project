@@ -5,6 +5,10 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2ebc7309-4363-4f35-ab06-9a7da748a650" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +16,33 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[FA8AB1700376]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1kvLyAVTrICph69oawafA2NgemJ" />
   <component name="ProjectViewState">
@@ -24,9 +50,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_30" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-30T17:11:41.065Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="data.User" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -108,13 +141,62 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2288" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1606582777169">
+    <state x="2288" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1606754378732">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
-    <state x="2288" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606582777169" />
-    <state x="2277" y="95" key="FileChooserDialogImpl" timestamp="1606582225722">
+    <state x="2288" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606754378732" />
+    <state x="546" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1606740045443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="546" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606740045443" />
+    <state x="2166" y="100" key="AndroidCreateResourceFileDialog" timestamp="1606753652415">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
-    <state x="2277" y="95" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606582225722" />
+    <state x="2166" y="100" key="AndroidCreateResourceFileDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606753652415" />
+    <state x="2277" y="95" key="FileChooserDialogImpl" timestamp="1606816683333">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state x="2277" y="95" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606816683333" />
+    <state x="476" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606812470594" />
+    <state width="1107" height="209" key="GridCell.Tab.0.bottom" timestamp="1606819037113">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606819037113" />
+    <state width="1107" height="209" key="GridCell.Tab.0.center" timestamp="1606819037113">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606819037113" />
+    <state width="1107" height="209" key="GridCell.Tab.0.left" timestamp="1606819037113">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606819037113" />
+    <state width="1107" height="209" key="GridCell.Tab.0.right" timestamp="1606819037113">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606819037113" />
+    <state width="1107" height="162" key="GridCell.Tab.1.bottom" timestamp="1606767185419">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="162" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606767185419" />
+    <state width="1107" height="162" key="GridCell.Tab.1.center" timestamp="1606767185419">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="162" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606767185419" />
+    <state width="1107" height="162" key="GridCell.Tab.1.left" timestamp="1606767185419">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="162" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606767185419" />
+    <state width="1107" height="162" key="GridCell.Tab.1.right" timestamp="1606767185419">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state width="1107" height="162" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606767185419" />
+    <state x="2312" y="118" key="chooseDestDirectoryDialog" timestamp="1606742076483">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state x="2312" y="118" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606742076483" />
+    <state x="2153" y="151" key="run.anything.popup" timestamp="1606750277222">
+      <screen x="1920" y="0" width="1152" height="680" />
+    </state>
+    <state x="2153" y="151" key="run.anything.popup/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606750277222" />
   </component>
 </project>

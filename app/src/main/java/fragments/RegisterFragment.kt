@@ -10,8 +10,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.restaurantapp.R
-import data.User
-import data.UserViewModel
+import data.User.User
+import data.User.UserViewModel
 import kotlinx.android.synthetic.main.fragment_register.*
 import kotlinx.android.synthetic.main.fragment_register.view.*
 import kotlinx.coroutines.InternalCoroutinesApi

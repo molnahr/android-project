@@ -1,9 +1,12 @@
-package data
+package data.User
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import data.User.User
+import data.User.UserDatabase
+import data.User.UserRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.launch
@@ -18,7 +21,7 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
         repository = UserRepository(userDao)
         readAllData = repository.readAllData
     }
-    fun addUser(user:User) {
+    fun addUser(user: User) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.addUser(user)
         }

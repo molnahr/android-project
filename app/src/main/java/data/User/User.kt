@@ -1,4 +1,4 @@
-package data
+package data.User
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
