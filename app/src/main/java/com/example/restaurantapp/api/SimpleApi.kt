@@ -19,8 +19,8 @@ interface SimpleApi {
     /**
      * Get repos ordered by stars.
      */
-    @GET("search/repositories?sort=stars")
-    suspend fun searchRepos(
+    @GET("restaurants")
+    suspend fun searchRestaurants(
             @Query("country") query: String,
             @Query("page") page: Int,
             @Query("per_page") itemsPerPage: Int

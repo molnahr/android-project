@@ -15,12 +15,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurantapp.Injection.Injection
-import com.example.restaurantapp.R
-import com.example.restaurantapp.adapter.MyAdapter
 import com.example.restaurantapp.data.RestaurantSearchResult
 import com.example.restaurantapp.databinding.FragmentListOfRestaurantsBinding
-import com.example.restaurantapp.repository.Repository
-import kotlinx.android.synthetic.main.fragment_details.*
+import kotlinx.android.synthetic.main.fragment_list_of_restaurants.*
 
 
 class ListOfRestaurantsFragment : Fragment() {
@@ -29,7 +26,6 @@ class ListOfRestaurantsFragment : Fragment() {
     private lateinit var viewModel: SearchRestaurantsViewModel
     private val adapter = RestaurantAdapter()
 
-    var navController: NavController? = null;
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -109,7 +105,7 @@ class ListOfRestaurantsFragment : Fragment() {
     private fun updateRestaurantListFromInput() {
         binding.searchRetaurant.text.trim().let {
             if (it.isNotEmpty()) {
-                recyclerView.scrollToPosition(0)
+                recycler_view_list.scrollToPosition(0)
                 viewModel.searchRepo(it.toString())
             }
         }

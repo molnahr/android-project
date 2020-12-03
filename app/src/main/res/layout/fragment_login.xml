@@ -19,21 +19,35 @@
     </TextView>
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_margin="20dp"
-        android:hint="Email"
-        android:id="@+id/email">
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawableLeft="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:hint="Email Address"
+        android:textSize="14sp">
     </EditText>
 
-
-
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_margin="20dp"
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableLeft="@drawable/custom_lock_icon"
         android:hint="Password"
-        android:id="@+id/password">
+        android:drawablePadding="12dp"
+        android:textSize="14sp">
     </EditText>
 
     <Button

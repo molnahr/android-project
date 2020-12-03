@@ -64,7 +64,7 @@ class RestaurantRepository(private val service: SimpleApi) {
         isRequestInProgress = true
         var successful = false
         try {
-            val response = service.searchRepos(query, lastRequestedPage, NETWORK_PAGE_SIZE)
+            val response = service.searchRestaurants(query, lastRequestedPage, NETWORK_PAGE_SIZE)
             val restaurants = response.items ?: emptyList()
             inMemoryCache.addAll(restaurants)
             Supplier.restaurants.addAll(restaurants)

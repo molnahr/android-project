@@ -28,7 +28,7 @@ class RestaurantViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     //ezzel lehet baj!
     init {
         itemView.setOnClickListener { v: View ->
-            navController!!.navigate(R.id.action_listOfRestaurantsFragment_to_detailsFragment)
+            navController!!.navigate(R.id.action_listOfRestaurantsFragment_to_loginFragment)
         }
 
     }

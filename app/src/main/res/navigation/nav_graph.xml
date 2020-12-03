@@ -31,17 +31,12 @@
         android:label="Restaurants"
         tools:layout="@layout/fragment_list_of_restaurants" >
         <action
-            android:id="@+id/action_listOfRestaurantsFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_listOfRestaurantsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="fragments.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="fragments.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
