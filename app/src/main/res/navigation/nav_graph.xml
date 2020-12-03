@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/listOfRestaurantsFragment"
-        android:name="fragments.ListOfRestaurantsFragment"
+        android:name="com.example.restaurantapp.ui.ListOfRestaurantsFragment"
         android:label="Restaurants"
         tools:layout="@layout/fragment_list_of_restaurants" >
         <action
@@ -39,4 +39,9 @@
         android:name="fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

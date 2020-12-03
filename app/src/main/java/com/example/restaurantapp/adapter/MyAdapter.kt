@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurantapp.R
 import com.example.restaurantapp.model.Restaurant
-import kotlinx.android.synthetic.main.row_layout.view.*
+import kotlinx.android.synthetic.main.row_item.view.*
+
 
 class MyAdapter:RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -15,13 +16,13 @@ class MyAdapter:RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     inner class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.row_layout,parent,false))
+        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.row_item,parent,false))
     }
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
-        holder.itemView.name_txt.text = myList[position].name
-        holder.itemView.price_txt.text = myList[position].price.toString()
-        holder.itemView.phone_txt.text = myList[position].phone
+        holder.itemView.text_view_name.text= myList[position].name
+        holder.itemView.text_view_price.text = myList[position].price.toString()
+        holder.itemView.text_view_addres.text = myList[position].address
     }
 
     override fun getItemCount(): Int {
