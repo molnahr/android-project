@@ -6,18 +6,8 @@
     android:layout_height="match_parent"
     android:background="#495B5E"
     android:orientation="vertical"
-    tools:context="fragments.LoginFragment">
-
-    <TextView
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:gravity="center_horizontal"
-        android:text="Welcome"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold"></TextView>
+    tools:context="fragments.LoginFragment"
+    android:gravity="center">
 
     <EditText
         android:id="@+id/email"

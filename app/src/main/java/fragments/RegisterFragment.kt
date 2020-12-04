@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.restaurantapp.R
 import data.User.User
 import data.User.UserViewModel
+import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_register.*
 import kotlinx.android.synthetic.main.fragment_register.view.*
 import kotlinx.coroutines.InternalCoroutinesApi
@@ -41,9 +42,9 @@ class RegisterFragment : Fragment() {
 
     @InternalCoroutinesApi
     private fun insertDataToDatabase() {
-        val email = email.text.toString()
-        val name = name.text.toString()
-        val password = password.text.toString()
+        val email = email_reg.text.toString()
+        val name = name_reg.text.toString()
+        val password = password_reg.text.toString()
 
         if(inputCheck(name,email,password)){
             val user = User(0,name, email,password)

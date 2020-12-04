@@ -6,18 +6,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="fragments.RegisterFragment"
     android:orientation="vertical"
-    android:background="#495B5E">
+    android:background="#495B5E"
+    android:gravity="center">
 
-    <TextView
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:gravity="center_horizontal"
-        android:text="Registration"
-        android:textAlignment="center"
-        android:textSize="36dp"
-        android:textStyle="bold"></TextView>
 
     <EditText
         android:id="@+id/name_reg"
