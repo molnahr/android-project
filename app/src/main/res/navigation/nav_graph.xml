@@ -29,14 +29,19 @@
         android:id="@+id/listOfRestaurantsFragment"
         android:name="com.example.restaurantapp.ui.ListOfRestaurantsFragment"
         android:label="Restaurants"
-        tools:layout="@layout/fragment_list_of_restaurants" >
-        <action
-            android:id="@+id/action_listOfRestaurantsFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_list_of_restaurants" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="fragments.ProfileFragment"
         android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_changeProfil"
+            app:destination="@id/changeProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeProfil"
+        android:name="fragments.ChangeProfil"
+        android:label="fragment_change_profil"
+        tools:layout="@layout/fragment_change_profil" />
 </navigation>

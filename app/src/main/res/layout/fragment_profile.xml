@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fragments.ProfileFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragments.ProfileFragment"
+    android:orientation="vertical"
+    android:background="#495B5E">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/name_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_name_ic"
+        android:drawableLeft="@drawable/custom_name_ic"
+        android:drawablePadding="12dp"
+        android:hint="Name"
+        android:textSize="14sp"
+        android:gravity="center_vertical">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/email_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawableLeft="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:hint="Email Address"
+        android:textSize="14sp"
+        android:gravity="center_vertical">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/password_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableLeft="@drawable/custom_lock_icon"
+        android:hint="Password"
+        android:drawablePadding="12dp"
+        android:textSize="14sp"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <TextView
+        android:id="@+id/phone_number_reg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawableLeft="@drawable/custom_phone_icon"
+        android:drawablePadding="12dp"
+        android:hint="Phone Number"
+        android:textSize="14sp"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Change Profil"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="#00BCD4"></Button>
+
+</LinearLayout>

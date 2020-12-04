@@ -4,20 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="fragments.RegisterFragment"
+    tools:context="fragments.ChangeProfil"
     android:orientation="vertical"
     android:background="#495B5E">
 
-    <TextView
-        style="@style/TextAppearance.AppCompat.Headline"
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:gravity="center_horizontal"
-        android:text="Registration"
-        android:textAlignment="center"
-        android:textSize="36dp"
-        android:textStyle="bold"></TextView>
+        tools:src="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/name_reg"
@@ -89,8 +85,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Registration"
+        android:text="Save"
         android:background="@drawable/custom_button"
         app:backgroundTint="#00BCD4"></Button>
 
 </LinearLayout>
+
