@@ -1,87 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="fragments.RegisterFragment"
-    android:orientation="vertical"
-    android:background="#495B5E"
-    android:gravity="center">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-
-    <EditText
-        android:id="@+id/name_reg"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_name_ic"
-        android:drawableLeft="@drawable/custom_name_ic"
-        android:drawablePadding="12dp"
-        android:hint="Name"
-        android:textSize="14sp">
-    </EditText>
-
-    <EditText
-        android:id="@+id/email_reg"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_email_icon"
-        android:drawableLeft="@drawable/custom_email_icon"
-        android:drawablePadding="12dp"
-        android:hint="Email Address"
-        android:textSize="14sp">
-    </EditText>
-
-
-    <EditText
-        android:id="@+id/password_reg"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_lock_icon"
-        android:drawableLeft="@drawable/custom_lock_icon"
-        android:hint="Password"
-        android:drawablePadding="12dp"
-        android:textSize="14sp">
-    </EditText>
-
-    <EditText
-        android:id="@+id/phone_number_reg"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
-        android:ems="10"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_phone_icon"
-        android:drawableLeft="@drawable/custom_phone_icon"
-        android:drawablePadding="12dp"
-        android:hint="Phone Number"
-        android:textSize="14sp">
-    </EditText>
-
-    <Button
-        android:id="@+id/register"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Registration"
-        android:background="@drawable/custom_button"
-        app:backgroundTint="#00BCD4"></Button>
+        tools:context="fragments.RegisterFragment"
+        android:orientation="vertical"
+        android:background="#495B5E"
+        android:gravity="top"
+        android:paddingBottom="80dp">
 
-</LinearLayout>
+
+        <EditText
+            android:id="@+id/name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_name_ic"
+            android:drawableLeft="@drawable/custom_name_ic"
+            android:drawablePadding="12dp"
+            android:hint="Name"
+            android:textSize="14sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawableLeft="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:hint="Email Address"
+            android:textSize="14sp">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawableLeft="@drawable/custom_lock_icon"
+            android:hint="Password"
+            android:drawablePadding="12dp"
+            android:textSize="14sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/phone_number_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_phone_icon"
+            android:drawableLeft="@drawable/custom_phone_icon"
+            android:drawablePadding="12dp"
+            android:hint="Phone Number"
+            android:textSize="14sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/address_reg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_address"
+            android:drawableLeft="@drawable/ic_address"
+            android:drawablePadding="12dp"
+            android:hint="Address"
+            android:textSize="14sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Registration"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="#00BCD4"
+            ></Button>
+
+    </LinearLayout>
+
+
+</ScrollView>

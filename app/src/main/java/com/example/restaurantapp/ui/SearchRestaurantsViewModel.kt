@@ -29,7 +29,7 @@ class SearchRestaurantsViewModel(private val repository: RestaurantRepository) :
     /**
      * Search a repository based on a query string.
      */
-    fun searchRepo(queryString: String) {
+    fun searchRestaurant(queryString: String) {
         queryLiveData.postValue(queryString)
     }
 

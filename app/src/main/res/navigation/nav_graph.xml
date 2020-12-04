@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/changeProfil"
-        android:name="fragments.ChangeProfil"
+        android:name="fragments.ChangeProfilFragment"
         android:label="fragment_change_profil"
         tools:layout="@layout/fragment_change_profil" />
 </navigation>

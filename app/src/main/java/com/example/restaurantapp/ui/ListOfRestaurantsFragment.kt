@@ -52,7 +52,7 @@ class ListOfRestaurantsFragment : Fragment() {
         initAdapter()
         val query = savedInstanceState?.getString(LAST_SEARCH_QUERY) ?: DEFAULT_QUERY
         if (viewModel.RestaurantResult.value == null) {
-            viewModel.searchRepo(query)
+            viewModel.searchRestaurant(query)
         }
         initSearch(query)
     }
@@ -106,7 +106,7 @@ class ListOfRestaurantsFragment : Fragment() {
         binding.searchRetaurant.text.trim().let {
             if (it.isNotEmpty()) {
                 recycler_view_list.scrollToPosition(0)
-                viewModel.searchRepo(it.toString())
+                viewModel.searchRestaurant(it.toString())
             }
         }
     }

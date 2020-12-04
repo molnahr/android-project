@@ -45,19 +45,24 @@ class RegisterFragment : Fragment() {
         val email = email_reg.text.toString()
         val name = name_reg.text.toString()
         val password = password_reg.text.toString()
+        val phoneNumber = phone_number_reg.text.toString()
+        val address = address_reg.text.toString()
 
-        if(inputCheck(name,email,password)){
-            val user = User(0,name, email,password)
+        if(inputCheck(name,email,password,phoneNumber,address)){
+            // Create User Object
+            val user = User(0,name, email,password,phoneNumber,address)
+            // Add Data to Database
             mUserViewModel.addUser(user)
-            Toast.makeText(requireContext(), "Sikeres!",Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Successfully Registration!",Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_registerFragment_to_listOfRestaurantsFragment)
         }else{
-            Toast.makeText(requireContext(), "Toltse ki az osszes mezot",Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Please fill out all fields.",Toast.LENGTH_LONG).show()
         }
     }
 
-    private fun inputCheck(name: String, email: String, password: String):Boolean{
-        return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && TextUtils.isEmpty(password))
+    private fun inputCheck(name: String, email: String, password: String, phone_number: String,address: String):Boolean{
+        return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && TextUtils.isEmpty(password)
+                && TextUtils.isEmpty(phone_number) && TextUtils.isEmpty(address))
     }
 
 }

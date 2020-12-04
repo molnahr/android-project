@@ -1,9 +1,13 @@
 package com.example.restaurantapp.ui
 
 import android.view.ViewGroup
+import androidx.fragment.app.ListFragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.example.restaurantapp.model.Restaurant
+import fragments.ProfileFragmentDirections
+import kotlinx.android.synthetic.main.row_item.view.*
 
 
 /**
@@ -20,6 +24,11 @@ class RestaurantAdapter : ListAdapter<Restaurant, androidx.recyclerview.widget.R
         if (repoItem != null) {
             (holder as RestaurantViewHolder).bind(repoItem)
         }
+        //https://www.youtube.com/watch?v=5rfBU75sguk 6:40
+//        holder.itemView.rowLayout.setOnClickListener {
+//            val action = ProfileFragmentDirections.actionProfileFragmentToChangeProfil()
+//            holder.itemView.findNavController().navigate(action)
+//        }
     }
 
     companion object {

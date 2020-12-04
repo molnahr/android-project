@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.restaurantapp.R
 
-class ChangeProfil : Fragment() {
+class ChangeProfilFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
