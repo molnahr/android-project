@@ -21,7 +21,7 @@
 
 
     <TextView
-        android:id="@+id/name_reg"
+        android:id="@+id/name_prof"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -39,7 +39,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/email_reg"
+        android:id="@+id/email_prof"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -57,7 +57,7 @@
 
 
     <TextView
-        android:id="@+id/password_reg"
+        android:id="@+id/password_prof"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -74,7 +74,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/phone_number_reg"
+        android:id="@+id/phone_number_prof"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -91,7 +91,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/address_reg"
+        android:id="@+id/address_prof"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -108,7 +108,7 @@
     </TextView>
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/changeProfil_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

@@ -14,24 +14,28 @@ import kotlinx.coroutines.launch
 
 // The ViewModels role is to provide data to the UI and survive configuration changes.
 // A ViewModel acts as a communication center between the Repository and th UI
-@InternalCoroutinesApi
-class UserViewModel(application: Application): AndroidViewModel(application) {
-    private var readAllData: LiveData<List<User>>
-    private var repository: UserRepository
 
-    init {
-        val userDao = UserDatabase.getDatabase(application).userDao()
-        repository = UserRepository(userDao)
-        readAllData = repository.readAllData
+class UserViewModel(application: Application): AndroidViewModel(application) {
+    var liveDataUser: LiveData<User>? = null
+
+    fun insertData( context: Context,
+                    name: String,
+                    email: String,
+                    password: String,
+                    phoneNumber: String,
+                    address: String) {
+        UserRepository.insertData(context, name, email,password,phoneNumber,address)
     }
-    fun addUser(user: User) {
-        // egy hatterszalon futtatom
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.addUser(user)
-        }
+
+    fun getUserDetails(context: Context) : LiveData<User>? {
+        liveDataUser = UserRepository.getLoginDetails(context)
+        return liveDataUser
     }
-//    fun getLoginDetails(context: Context) : LiveData<User>? {
-//        readAllData = LoginRepository.getLoginDetails(context)
-//        return readAllData
+
+//    fun updateUser(user:User){
+//        viewModelScope.launch (Dispatchers.IO){
+//            UserRepository.value?
+//        }
 //    }
+
 }

@@ -10,7 +10,7 @@
     android:gravity="center">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/email_log"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -25,7 +25,7 @@
         android:textSize="14sp"></EditText>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_log"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"

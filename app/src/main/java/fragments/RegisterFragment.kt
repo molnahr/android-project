@@ -20,8 +20,6 @@ import kotlinx.coroutines.InternalCoroutinesApi
 
 class RegisterFragment : Fragment() {
 
-
-    @InternalCoroutinesApi
     private lateinit var mUserViewModel: UserViewModel
 
     @InternalCoroutinesApi
@@ -52,7 +50,7 @@ class RegisterFragment : Fragment() {
             // Create User Object
             val user = User(0,name, email,password,phoneNumber,address)
             // Add Data to Database
-            mUserViewModel.addUser(user)
+            context?.let { it1 -> mUserViewModel.insertData(it1, name, email, password, phoneNumber, address) }
             Toast.makeText(requireContext(), "Successfully Registration!",Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_registerFragment_to_listOfRestaurantsFragment)
         }else{
