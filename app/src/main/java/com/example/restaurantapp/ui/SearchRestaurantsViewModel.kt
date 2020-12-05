@@ -21,8 +21,8 @@ class SearchRestaurantsViewModel(private val repository: RestaurantRepository) :
     private val queryLiveData = MutableLiveData<String>()
     val RestaurantResult: LiveData<RestaurantSearchResult> = queryLiveData.switchMap { queryString ->
         liveData {
-            val repos = repository.getSearchResultStream(queryString).asLiveData(Dispatchers.Main)
-            emitSource(repos)
+            val restaurant = repository.getSearchResultStream(queryString).asLiveData(Dispatchers.Main)
+            emitSource(restaurant)
         }
     }
 

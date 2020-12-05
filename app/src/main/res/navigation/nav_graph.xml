@@ -29,7 +29,11 @@
         android:id="@+id/listOfRestaurantsFragment"
         android:name="com.example.restaurantapp.ui.ListOfRestaurantsFragment"
         android:label="Restaurants"
-        tools:layout="@layout/fragment_list_of_restaurants" />
+        tools:layout="@layout/fragment_list_of_restaurants">
+        <action
+            android:id="@+id/action_listOfRestaurantsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="fragments.ProfileFragment"
@@ -42,6 +46,14 @@
     <fragment
         android:id="@+id/changeProfil"
         android:name="fragments.ChangeProfilFragment"
-        android:label="fragment_change_profil"
+        android:label="Change Profil"
         tools:layout="@layout/fragment_change_profil" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="fragments.DetailsFragment"
+        android:label="Restaurant Details" >
+        <argument android:name="arg"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
 </navigation>

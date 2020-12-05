@@ -32,6 +32,20 @@ class LoginFragment : Fragment(),View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+        view.findViewById<Button>(R.id.login).setOnClickListener(this)
+        view.findViewById<Button>(R.id.register).setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when (v!!.id){
+            R.id.login -> navController!!.navigate(R.id.action_loginFragment_to_listOfRestaurantsFragment)
+            R.id.register ->  navController!!.navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+    }
+
+}
+
 
 //        navController = Navigation.findNavController(view)
 ////         view.findViewById<Button>(R.id.login).setOnClickListener{
@@ -45,18 +59,3 @@ class LoginFragment : Fragment(),View.OnClickListener {
 ////                 var user = userDao.login(emailText,passwordText)
 ////             }
 //         }
-
-
-
-
-
-        view.findViewById<Button>(R.id.register).setOnClickListener(this)
-    }
-
-    override fun onClick(v: View?) {
-        when (v!!.id){
-            R.id.register ->  navController!!.navigate(R.id.action_loginFragment_to_registerFragment)
-        }
-    }
-
-}
