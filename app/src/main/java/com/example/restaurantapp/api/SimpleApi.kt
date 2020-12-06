@@ -21,7 +21,7 @@ interface SimpleApi {
      */
     @GET("restaurants")
     suspend fun searchRestaurants(
-            @Query("country") query: String,
+            @Query("city") query: String,
             @Query("page") page: Int,
             @Query("per_page") itemsPerPage: Int
     ): RestaurantSearchResponse

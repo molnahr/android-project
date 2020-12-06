@@ -47,7 +47,26 @@
         android:id="@+id/changeProfil"
         android:name="fragments.ChangeProfilFragment"
         android:label="Change Profil"
-        tools:layout="@layout/fragment_change_profil" />
+        tools:layout="@layout/fragment_change_profil" >
+        <action
+            android:id="@+id/action_changeProfil_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="fragments.DetailsFragment"

@@ -32,10 +32,8 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
         return liveDataUser
     }
 
-//    fun updateUser(user:User){
-//        viewModelScope.launch (Dispatchers.IO){
-//            UserRepository.value?
-//        }
-//    }
+    fun updateUser(context: Context, name: String, email: String, address: String, phone: String, password: String) {
+        UserRepository.updateUser(context, name, email, address, phone, password)
+    }
 
 }

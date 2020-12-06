@@ -48,6 +48,14 @@ class UserRepository(private val userDao: UserDao) {
 
             return user
         }
+
+        fun updateUser(context: Context, name: String, email: String, address: String, phone: String, password: String) {
+            userDatabase = initializeUserDB(context)
+
+            CoroutineScope(Dispatchers.IO).launch {
+                userDatabase!!.userDao().updateUser(name, email, address, phone, password)
+            }
+        }
     }
 
 }

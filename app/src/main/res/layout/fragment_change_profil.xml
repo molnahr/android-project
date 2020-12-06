@@ -18,7 +18,7 @@
     android:paddingBottom="80dp">
 
     <EditText
-        android:id="@+id/name_reg"
+        android:id="@+id/name_up"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -34,7 +34,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/email_reg"
+        android:id="@+id/email_up"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -51,7 +51,7 @@
 
 
     <EditText
-        android:id="@+id/password_reg"
+        android:id="@+id/password_up"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -67,7 +67,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/phone_number_reg"
+        android:id="@+id/phone_number_up"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -84,7 +84,7 @@
 
 
     <EditText
-        android:id="@+id/address_reg"
+        android:id="@+id/address_up"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -100,7 +100,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

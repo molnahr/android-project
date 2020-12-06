@@ -105,7 +105,7 @@ class ListOfRestaurantsFragment : Fragment() {
     private fun updateRestaurantListFromInput() {
         binding.searchRetaurant.text.trim().let {
             if (it.isNotEmpty()) {
-                recycler_view_list.scrollToPosition(0)
+                binding.recyclerViewList.scrollToPosition(0)
                 viewModel.searchRestaurant(it.toString())
             }
         }
@@ -129,6 +129,6 @@ class ListOfRestaurantsFragment : Fragment() {
 
     companion object {
         private const val LAST_SEARCH_QUERY: String = "last_search_query"
-        private const val DEFAULT_QUERY = "US"
+        private const val DEFAULT_QUERY = "New York"
     }
 }
