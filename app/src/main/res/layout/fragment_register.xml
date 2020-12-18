@@ -49,21 +49,34 @@
         </EditText>
 
 
-        <EditText
-            android:id="@+id/password_reg"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:ems="10"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:background="@drawable/custom_input"
-            android:drawableStart="@drawable/custom_lock_icon"
-            android:drawableLeft="@drawable/custom_lock_icon"
-            android:hint="Password"
-            android:drawablePadding="12dp"
-            android:textSize="14sp">
-        </EditText>
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password_reg"
+                android:layout_width="254dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:drawableLeft="@drawable/custom_lock_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"></EditText>
+
+            <ImageView
+                android:id="@+id/isShowHidePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_show_password"
+                ></ImageView>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/phone_number_reg"

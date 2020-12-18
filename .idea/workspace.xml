@@ -58,12 +58,18 @@
     <property name="ResourceManagerPrefKey.ResourceType" value="MENU" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/user/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-alpha04/f27d98a59b17c8f160111c71fae3a3633b80bba2/recyclerview-1.2.0-alpha04-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
     <property name="android-custom-viewC:/Users/user/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/button/MaterialButton.java_SELECTED" value="MaterialButton" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../android-paging-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../restaurantme-master/restaurantme-master/RestaurantMe" />
+    <property name="multi-representation-previewC:/Users/user/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-alpha04/f27d98a59b17c8f160111c71fae3a3633b80bba2/recyclerview-1.2.0-alpha04-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/user/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/button/MaterialButton.java_selected" value="Custom views" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1635739390">
+      <recent name="fragments" />
+      <recent name="com.example.restaurantapp.ui" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.restaurantapp.ui" />
       <recent name="data.User" />
@@ -71,6 +77,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Restaurant\AndroidProject\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\user\Desktop\Restaurant\AndroidProject\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.restaurantapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Restaurant\AndroidProject\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunManager">
@@ -166,11 +178,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1607263850468" />
-    <state x="409" y="105" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607174373604">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2140" y="285" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608230107472">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state x="2140" y="285" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608230107472" />
+    <state x="2294" y="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1608230109012">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state x="2294" y="242" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608230109012" />
+    <state x="2227" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608223816537">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state x="409" y="105" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607174373604" />
     <state x="2227" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607084477248" />
+    <state x="2227" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608223816537" />
     <state x="2330" y="168" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1606950560743">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
@@ -180,36 +201,41 @@
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
     <state x="2166" y="100" key="AndroidCreateResourceFileDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607096263806" />
-    <state x="2293" y="87" key="AndroidProcessChooserDialog" timestamp="1607277029335">
+    <state x="2293" y="87" key="AndroidProcessChooserDialog" timestamp="1607363600391">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
-    <state x="2293" y="87" key="AndroidProcessChooserDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607277029335" />
-    <state x="2277" y="95" key="FileChooserDialogImpl" timestamp="1607277128404">
-      <screen x="1920" y="0" width="1152" height="680" />
+    <state x="2293" y="87" key="AndroidProcessChooserDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607363600391" />
+    <state x="2277" y="101" key="FileChooserDialogImpl" timestamp="1608298252580">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state x="476" y="115" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607256913201" />
-    <state x="2277" y="95" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607277128404" />
+    <state x="2277" y="95" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607359178823" />
+    <state x="2277" y="101" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608298252580" />
     <state x="476" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607025516327" />
-    <state width="1107" height="136" key="GridCell.Tab.0.bottom" timestamp="1607278943279">
-      <screen x="1920" y="0" width="1152" height="680" />
+    <state width="1107" height="144" key="GridCell.Tab.0.bottom" timestamp="1608308948267">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state width="1491" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607181710368" />
-    <state width="1107" height="136" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607278943279" />
-    <state width="1107" height="136" key="GridCell.Tab.0.center" timestamp="1607278943279">
-      <screen x="1920" y="0" width="1152" height="680" />
+    <state width="1107" height="136" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607364645665" />
+    <state width="1107" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608308948267" />
+    <state width="1107" height="144" key="GridCell.Tab.0.center" timestamp="1608308948267">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state width="1491" height="178" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607181710368" />
-    <state width="1107" height="136" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607278943279" />
-    <state width="1107" height="136" key="GridCell.Tab.0.left" timestamp="1607278943279">
-      <screen x="1920" y="0" width="1152" height="680" />
+    <state width="1107" height="136" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607364645665" />
+    <state width="1107" height="144" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608308948267" />
+    <state width="1107" height="144" key="GridCell.Tab.0.left" timestamp="1608308948267">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state width="1491" height="178" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607181710368" />
-    <state width="1107" height="136" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607278943279" />
-    <state width="1107" height="136" key="GridCell.Tab.0.right" timestamp="1607278943279">
-      <screen x="1920" y="0" width="1152" height="680" />
+    <state width="1107" height="136" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607364645665" />
+    <state width="1107" height="144" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608308948267" />
+    <state width="1107" height="144" key="GridCell.Tab.0.right" timestamp="1608308948267">
+      <screen x="1920" y="0" width="1152" height="720" />
     </state>
     <state width="1491" height="178" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@0.0.1536.824" timestamp="1607181710368" />
-    <state width="1107" height="136" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607278943279" />
+    <state width="1107" height="136" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607364645665" />
+    <state width="1107" height="144" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608308948267" />
     <state width="1107" height="162" key="GridCell.Tab.1.bottom" timestamp="1606767185419">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
@@ -226,10 +252,14 @@
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
     <state width="1107" height="162" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606767185419" />
-    <state x="2312" y="118" key="chooseDestDirectoryDialog" timestamp="1607085722518">
+    <state x="2005" y="5" key="SettingsEditor" timestamp="1608225168209">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state x="2005" y="5" key="SettingsEditor/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608225168209" />
+    <state x="2312" y="118" key="chooseDestDirectoryDialog" timestamp="1607365098927">
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
-    <state x="2312" y="118" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607085722518" />
+    <state x="2312" y="118" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1607365098927" />
     <state x="318" y="138" width="935" height="497" key="dock-window-1" timestamp="1607266419367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -238,5 +268,9 @@
       <screen x="1920" y="0" width="1152" height="680" />
     </state>
     <state x="2153" y="151" key="run.anything.popup/0.0.1536.824/1920.0.1152.680@1920.0.1152.680" timestamp="1606750277222" />
+    <state x="2159" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1608307896730">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state x="2159" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1152.720@1920.0.1152.720" timestamp="1608307896730" />
   </component>
 </project>

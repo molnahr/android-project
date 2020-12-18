@@ -46,7 +46,7 @@
     <fragment
         android:id="@+id/changeProfil"
         android:name="fragments.ChangeProfilFragment"
-        android:label="Change Profil"
+        android:label="Change your profile"
         tools:layout="@layout/fragment_change_profil" >
         <action
             android:id="@+id/action_changeProfil_to_profileFragment"
@@ -70,9 +70,24 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="fragments.DetailsFragment"
-        android:label="Restaurant Details" >
+        android:label="Details" >
         <argument android:name="arg"
             app:argType="integer"
             android:defaultValue="0"/>
+        <action
+            android:id="@+id/action_detailsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="fragments.MapsFragment"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="lat"
+            app:argType="float" />
+        <argument
+            android:name="lng"
+            app:argType="float" />
     </fragment>
 </navigation>

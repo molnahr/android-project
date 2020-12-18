@@ -7,17 +7,22 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="fragments.ProfileFragment"
     android:orientation="vertical"
     android:background="#495B5E"
     android:gravity="center"
     android:paddingBottom="80dp">
 
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/firstpic"/>
 
 
     <TextView

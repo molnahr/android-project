@@ -2,7 +2,7 @@ package com.example.restaurantapp.data
 
 
 import android.util.Log
-import com.example.restaurantapp.api.SimpleApi
+import com.example.restaurantapp.Restaurant.api.SimpleApi
 import com.example.restaurantapp.model.Restaurant
 import com.example.restaurantapp.model.Supplier
 import kotlinx.coroutines.FlowPreview
@@ -34,7 +34,7 @@ class RestaurantRepository(private val service: SimpleApi) {
     private var isRequestInProgress = false
 
     /**
-     * Search repositories whose names match the query, exposed as a stream of data that will emit
+     * Search repositories whose city match the query, exposed as a stream of data that will emit
      * every time we get more data from the network.
      */
     @FlowPreview
@@ -43,10 +43,10 @@ class RestaurantRepository(private val service: SimpleApi) {
         lastRequestedPage = 1
         inMemoryCache.clear()
         requestAndSaveData(query)
-
         return searchResults.asFlow()
     }
 
+    // Request more page.
     suspend fun requestMore(query: String) {
         if (isRequestInProgress) return
         val successful = requestAndSaveData(query)
@@ -55,21 +55,19 @@ class RestaurantRepository(private val service: SimpleApi) {
         }
     }
 
-    suspend fun retry(query: String) {
-        if (isRequestInProgress) return
-        requestAndSaveData(query)
-    }
-
+    // query ex: Dallas
     private suspend fun requestAndSaveData(query: String): Boolean {
         isRequestInProgress = true
         var successful = false
         try {
+            // The respons to our query. lastRequestedPage=REPO_STARTING_PAGE_INDEX,
+                // NETWORK_PAGE_SIZE static 25
             val response = service.searchRestaurants(query, lastRequestedPage, NETWORK_PAGE_SIZE)
             val restaurants = response.items ?: emptyList()
             inMemoryCache.addAll(restaurants)
             Supplier.restaurants.addAll(restaurants)
-            //val restaurantsNames = reposByName(query)
-            searchResults.offer(RestaurantSearchResult.Success(inMemoryCache))
+            val restaurantCity = reposByCity(query)
+            searchResults.offer(RestaurantSearchResult.Success(restaurantCity))
             successful = true
         } catch (exception: IOException) {
             searchResults.offer(RestaurantSearchResult.Error(exception))
@@ -80,16 +78,18 @@ class RestaurantRepository(private val service: SimpleApi) {
         return successful
     }
 
-    private fun reposByName(query: String): List<Restaurant> {
+    // Serch by city.
+    private fun reposByCity(query: String): List<Restaurant> {
         Log.i("query", query)
-        // from the in memory cache select only the repos whose name or description matches
-        // the query. Then order the results.
+        // from the in memory cache select only the repos whose name matches
+        // the query
         return inMemoryCache.filter {
-            it.name.contains(query, true) ||
-                    (it.name != null)
-        }.sortedWith(compareByDescending<Restaurant> { it.id }.thenBy { it.name })
+            it.city.contains(query, true) ||
+                    (it.city != null)
+        }
     }
 
+    // Number of items in recyclerView pages.
     companion object {
         private const val NETWORK_PAGE_SIZE = 25
     }

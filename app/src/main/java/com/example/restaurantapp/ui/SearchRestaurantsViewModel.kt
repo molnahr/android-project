@@ -8,8 +8,8 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 
 /**
- * ViewModel for the [SearchRepositoriesActivity] screen.
- * The ViewModel works with the [GithubRepository] to get the data.
+ * ViewModel for the [SearchRestaurantsViewModel] screen.
+ * The ViewModel works with the [RestaurantRepository] to get the data.
  */
 @ExperimentalCoroutinesApi
 class SearchRestaurantsViewModel(private val repository: RestaurantRepository) : ViewModel() {
@@ -19,12 +19,14 @@ class SearchRestaurantsViewModel(private val repository: RestaurantRepository) :
     }
 
     private val queryLiveData = MutableLiveData<String>()
-    val RestaurantResult: LiveData<RestaurantSearchResult> = queryLiveData.switchMap { queryString ->
-        liveData {
-            val restaurant = repository.getSearchResultStream(queryString).asLiveData(Dispatchers.Main)
-            emitSource(restaurant)
+    val RestaurantResult: LiveData<RestaurantSearchResult> =
+        queryLiveData.switchMap { queryString ->
+            liveData {
+                val restaurant =
+                    repository.getSearchResultStream(queryString).asLiveData(Dispatchers.Main)
+                emitSource(restaurant)
+            }
         }
-    }
 
     /**
      * Search a repository based on a query string.
@@ -33,6 +35,9 @@ class SearchRestaurantsViewModel(private val repository: RestaurantRepository) :
         queryLiveData.postValue(queryString)
     }
 
+    /**
+     * List our 25 item. Then we can scrole them.
+     */
     fun listScrolled(visibleItemCount: Int, lastVisibleItemPosition: Int, totalItemCount: Int) {
         if (visibleItemCount + lastVisibleItemPosition + VISIBLE_THRESHOLD >= totalItemCount) {
             val immutableQuery = queryLiveData.value

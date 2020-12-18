@@ -15,11 +15,13 @@ import data.User.UserDao
 import data.User.UserDatabase
 import kotlinx.android.synthetic.main.fragment_login.*
 
-
-class LoginFragment : Fragment(),View.OnClickListener {
-
+/**
+ * A simple [Fragment] subclass.
+ * Login
+ * Navigate to listOfRestaurantsFragment or RegisterFragment.
+ */
+class LoginFragment : Fragment(), View.OnClickListener {
     var navController: NavController? = null;
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +29,6 @@ class LoginFragment : Fragment(),View.OnClickListener {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_login, container, false)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,16 +38,14 @@ class LoginFragment : Fragment(),View.OnClickListener {
         view.findViewById<Button>(R.id.register).setOnClickListener(this)
     }
 
+    // navigate to registerFragment or the listofRestaurantsFragment.
     override fun onClick(v: View?) {
-        when (v!!.id){
+        when (v!!.id) {
             R.id.login -> navController!!.navigate(R.id.action_loginFragment_to_listOfRestaurantsFragment)
-            R.id.register ->  navController!!.navigate(R.id.action_loginFragment_to_registerFragment)
+            R.id.register -> navController!!.navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
-
 }
-
-
 //        navController = Navigation.findNavController(view)
 ////         view.findViewById<Button>(R.id.login).setOnClickListener{
 ////             var emailText: String = email_log.text.toString()

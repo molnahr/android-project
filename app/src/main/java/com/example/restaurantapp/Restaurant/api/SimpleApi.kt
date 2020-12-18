@@ -1,24 +1,17 @@
-package com.example.restaurantapp.api
+package com.example.restaurantapp.Restaurant.api
 
-import com.example.restaurantapp.model.Restaurant
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import okhttp3.logging.HttpLoggingInterceptor.Level
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-const val IN_QUALIFIER = "in:name,description"
-
 /**
  * Github API communication setup via Retrofit.
  */
 interface SimpleApi {
-    /**
-     * Get repos ordered by stars.
-     */
     @GET("restaurants")
     suspend fun searchRestaurants(
             @Query("city") query: String,
@@ -27,7 +20,7 @@ interface SimpleApi {
     ): RestaurantSearchResponse
 
     companion object {
-        private const val BASE_URL = "https://opentable.herokuapp.com/api/"
+        private const val BASE_URL = "https://ratpark-api.imok.space/"
 
         fun create(): SimpleApi {
             val logger = HttpLoggingInterceptor()

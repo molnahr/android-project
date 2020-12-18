@@ -1,8 +1,7 @@
 package com.example.restaurantapp.Injection
 
-import android.content.Context
 import androidx.lifecycle.ViewModelProvider
-import com.example.restaurantapp.api.SimpleApi
+import com.example.restaurantapp.Restaurant.api.SimpleApi
 import com.example.restaurantapp.data.RestaurantRepository
 import com.example.restaurantapp.ui.ViewModelFactory
 
@@ -14,10 +13,9 @@ import com.example.restaurantapp.ui.ViewModelFactory
 object Injection {
 
     /**
-     * Creates an instance of [GithubRepository] based on the [GithubService] and a
-     * [GithubLocalCache]
+     * Creates an instance of [RestaurantRepository] based on the [SimpleApi ] and a
      */
-    private fun provideGithubRepository(): RestaurantRepository {
+    private fun provideRestaurantRepository(): RestaurantRepository {
         return RestaurantRepository(SimpleApi.create())
     }
 
@@ -26,6 +24,6 @@ object Injection {
      * [ViewModel] objects.
      */
     fun provideViewModelFactory(): ViewModelProvider.Factory {
-        return ViewModelFactory(provideGithubRepository())
+        return ViewModelFactory(provideRestaurantRepository())
     }
 }
