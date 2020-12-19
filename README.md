@@ -14,7 +14,7 @@ get data from the [BE](https://opentable.herokuapp.com/) as mentioned, list it, 
 You can read more [here](https://moodle.sapidoc.ms.sapientia.ro/pluginfile.php/18436/mod_resource/content/1/Android%20Project%202020-2021.docx.pdf).
 
 
-You can download Restaurants from https://github.com/molnahr/android-project.
+You can download the project from https://github.com/molnahr/android-project.
 
 
 This application was originally created by Molnar Balazs.
